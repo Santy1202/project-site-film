@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>КіноСвіт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🎬 КіноСвіт</h1>
+  <button onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="search">
+  <input type="text" placeholder="Пошук..." oninput="searchMovies(this.value)">
+</div>
+
+<div class="categories">
+  <div class="cat" onclick="filterGenre('all')">Усі</div>
+  <div class="cat" onclick="filterGenre('movie')">🎬 Фільми</div>
+  <div class="cat" onclick="filterGenre('series')">📺 Серіали</div>
+  <div class="cat" onclick="filterGenre('fantasy')">🚀 Фантастика</div>
+  <div class="cat" onclick="filterGenre('drama')">🎭 Драма</div>
+  <div class="cat" onclick="filterGenre('action')">🔥 Екшн</div>
+  <div class="cat" onclick="filterGenre('crime')">🕵️ Кримінал</div>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="modal" id="modal">
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<script src="booty.js"></script>
+</body>
+</html>
