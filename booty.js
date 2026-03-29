@@ -308,3 +308,4 @@ document.getElementById("modal").onclick = (event) => {
     document.getElementById("modal").style.display = "none";
   }
 };
+<script src="booty.js"></script>
