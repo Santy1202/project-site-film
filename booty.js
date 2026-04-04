@@ -241,7 +241,7 @@ function render(list) {
   }
   
   list.forEach(m => {
-    // Додаємо alt="${m.title}" про всяк випадок
+   
     grid.innerHTML += `
       <div class="card" onclick="openItem('${m.title}')">
         <img src="${m.img}" alt="Постер ${m.title}" onerror="this.src='https://via.placeholder.com/300x450/141928/eaf4ff?text=Постер+відсутній';">
@@ -308,4 +308,3 @@ document.getElementById("modal").onclick = (event) => {
     document.getElementById("modal").style.display = "none";
   }
 };
-<script src="booty.js"></script>
