@@ -96,7 +96,7 @@ input {
   align-items: center;
   backdrop-filter: blur(8px);
 }
-/* 12312313*/
+
 .modal-content {
   background: rgba(20,25,40,0.95);
   padding: 20px;
@@ -111,4 +111,42 @@ input {
   margin: 5px 0;
   border-radius: 10px;
   cursor: pointer;
+}
+body.light {
+  --bg: #eaf4ff;        
+  --card: #ffffff;      
+  --text: #0f172a;     
+  --accent: #00aaff; 
+}  
+body.light .theme-btn {
+  box-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
+}
+
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+
+  background: var(--card);
+  color: var(--text);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 0 10px var(--accent);
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--accent);
+}
+
+header {
+  position: relative;
+  overflow: hidden;
 }
